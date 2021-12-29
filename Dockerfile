@@ -5,4 +5,3 @@ RUN apt-get update && apt-get install -y \
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 ENV TZ=Europe/Moscow
 RUN printf '[PHP]\ndate.timezone = "Europe/Moscow"\n' > /usr/local/etc/php/conf.d/tzone.ini
-
